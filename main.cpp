@@ -42,7 +42,7 @@ public:
             ran = rand()%qList.size();
             tmp = qList[ran];
             Queue.push(tmp);
-            for (int i = (int)qList.size() - 1; i >= 0; i--)
+            for (int i = static_cast<int>(qList.size()) - 1; i >= 0; i--)
             {
                 if (qList[i] == tmp)
                 {
@@ -56,14 +56,15 @@ public:
 
 };
 
-void Display(TrackList* tmp)
+void Display(const TrackList* tmp)
 {
         cout<<"Now playing: " << tmp->Queue.front()<<endl;
 }
 
 void Next(TrackList* tmp)
 {
-
+    tmp->Queue.pop();
+    Display(tmp);
 }
 
 void Start(TrackList* tmp, bool Shuffle)
@@ -72,10 +73,11 @@ void Start(TrackList* tmp, bool Shuffle)
         {
             tmp->TLtoQL();
         tmp->LoopQueue = tmp->Queue;
+            Display(tmp);
         }
         else
         {
-            for (int i = (int)tmp->tracklist.size(); i >= 0; i--)
+            for (int i = static_cast<int>(tmp->tracklist.size()); i >= 0; i--)
             {
                 tmp->Queue.push(tmp->tracklist[i]);
 
@@ -85,21 +87,32 @@ void Start(TrackList* tmp, bool Shuffle)
 
 }
 int main(){
-        TrackList* tmp = new TrackList();
+        auto* tmp = new TrackList();
         bool Shuffle = false;
+        int choice = 0;
         cout<<"Shuffle? 0/1"<<endl;
         cin>>Shuffle;
         Start(tmp, Shuffle);
 
-        // tmp->TLtoQL();
-        // tmp->LoopQueue = tmp->Queue;
-        // while (!tmp->Queue.empty()) {
-        //     cout<< tmp->Queue.front()<< " ";
-        //
-        //     tmp->Queue.pop();
-        //
-        // }
-delete tmp;
+        while (!tmp->Queue.empty())
+        {
+            cout<<"Next/Previous/Close 1/2/0"<<endl;
+            cin>>choice;
+            switch(choice) {
+                case 1:
+                    Next(tmp);
+                    break;
+                case 2:
+                    //Previous();
+                    break;
+                default:
+                    delete tmp;
+                    return 0;
 
-    return 0;
+            }
+        }
+
+
+
+
 }
