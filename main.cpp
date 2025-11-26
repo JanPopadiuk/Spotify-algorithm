@@ -1,6 +1,5 @@
 #include <vector>
 #include <bits/stdc++.h>
-#include <queue>
 #include <iostream>
 using namespace std;
 
@@ -38,7 +37,8 @@ public:
         int ran = 0;
         while(!qList.empty())
         {
-            ran = rand()%qList.size();
+
+            ran = rand()%static_cast<int>(qList.size());
             tmp = qList[ran];
             Queue.push_back(tmp);
             for (int i = static_cast<int>(qList.size()) - 1; i >= 0; i--)
@@ -55,9 +55,9 @@ public:
 
 };
 
-void Display(const TrackList* tmp, int curr)
+void Display(int curr)
 {
-        cout<<"Now playing: " << tmp->Queue[curr]<<endl;
+        cout<<"Now playing: " << curr<<endl;
 }
 
 
@@ -68,7 +68,7 @@ void Start(TrackList* tmp, bool Shuffle, int curr)
         {
             tmp->TLtoQL();
         
-            Display(tmp, curr);
+            Display(curr);
         }
         else
         {
@@ -77,7 +77,7 @@ void Start(TrackList* tmp, bool Shuffle, int curr)
                 tmp->Queue.push_back(tmp->tracklist[i]);
 
             }
-            Display(tmp,curr);
+            Display(curr);
         }
 
 }
@@ -97,23 +97,23 @@ int main(){
             switch(choice) {
                 case 1:
 					Current++;
-					if(!Current < static_cast<int>(tmp->Queue.size())
+					if(Current < static_cast<int>(tmp->Queue.size())-1)
 					{
-                    Display(tmp,Current);
+                    Display(Current);
 					}else
 					{
 						Current = 0;
-						Display(tmp,Current);
+						Display(Current);
 					}
                     break;
                 case 2:
                     Current--;
-                    if(!Current > 0)
+                    if(Current < 0)
                     {
-                    Display(tmp,Current);
+                        Current = static_cast<int>(tmp->Queue.size())-2;
+                        Display(Current);
                     }else{
-                    Current = static_cast<int>(tmp->Queue.size() - 1;
-                    Display(tmp,Current);
+                        Display(Current);
 					}
                     break;
                 default:
