@@ -1,22 +1,23 @@
 #include <vector>
 #include <bits/stdc++.h>
 #include <iostream>
+#include <string>
 using namespace std;
 
 class TrackList
 {
 public:
-    vector<int> tracklist;
-    vector<int> qList;
-    vector<int> Queue;
+    vector<pair<int, string>> tracklist;
+    vector<string> qList;
+    vector<string> Queue;
 
     TrackList()
     {
-        tracklist.push_back(3);
-        tracklist.push_back(3);
-        tracklist.push_back(2);
-        tracklist.push_back(1);
-        tracklist.push_back(1);
+        tracklist.push_back({3,"Flashing lights"});
+        tracklist.push_back({3,"Power"});
+        tracklist.push_back({2,"Runaway"});
+        tracklist.push_back({1,"Heartless"});
+        tracklist.push_back({1,"Ghosttown"});
     }
 
     void TLtoQL()
@@ -26,9 +27,9 @@ public:
 
         for(int i = 0; i < (int)tracklist.size(); i++)
         {
-            for(int j = 0; j < tracklist[i]; j++)
+            for(int j = 0; j < tracklist[i].first; j++)
             {
-                qList.push_back(i);
+                qList.push_back(tracklist[i].second);
             }
         }
 
@@ -41,7 +42,7 @@ public:
         while(!qList.empty())
         {
             int ran = rand() % qList.size();
-            int tmp = qList[ran];
+            string tmp = qList[ran];
 
             Queue.push_back(tmp);
 
@@ -52,35 +53,36 @@ public:
                     qList.erase(qList.begin() + i);
             }
         }
-    }
-};
-
-void Display(int currTrackID)
+	}
+	
+void Display(int curr)
 {
-    cout << "Now playing: " << currTrackID << endl;
+    cout << "Now playing: " <<Queue[curr]  << endl;
 }
 
-void Start(TrackList* tmp, bool Shuffle, int &curr)
+void Start(bool Shuffle, int &curr)
 {
     if (Shuffle)
     {
-        tmp->TLtoQL();
+        TLtoQL();
 
         curr = 0;
-        Display(tmp->Queue[curr]);
+        Display( curr);
     }
     else
     {
-        tmp->Queue.clear();
+        Queue.clear();
 
 
-        for (int i = 0; i < (int)tmp->tracklist.size(); i++)
-            tmp->Queue.push_back(i);
+        for (int i = 0; i < (int)tracklist.size(); i++)
+            Queue.push_back(tracklist[i].second);
 
         curr = 0;
-        Display(tmp->Queue[curr]);
+        Display( curr);
     }
 }
+};
+
 
 int main()
 {
@@ -92,7 +94,7 @@ int main()
     cout << "Shuffle? 0/1: ";
     cin >> Shuffle;
 
-    Start(tmp, Shuffle, Current);
+    tmp->Start(Shuffle, Current);
 
     while (true)
     {
@@ -111,7 +113,7 @@ int main()
             if (Current >= (int)tmp->Queue.size())
                 Current = 0;
 
-            Display(tmp->Queue[Current]);
+            tmp->Display(Current);
         }
         else if (choice == 2)  // PREVIOUS
         {
@@ -119,7 +121,7 @@ int main()
             if (Current < 0)
                 Current = tmp->Queue.size() - 1;
 
-            Display(tmp->Queue[Current]);
+            tmp->Display(Current);
         }
     }
 }
