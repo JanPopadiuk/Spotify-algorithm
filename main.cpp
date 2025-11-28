@@ -81,6 +81,10 @@ void Start(bool Shuffle, int &curr)
         Display( curr);
     }
 }
+
+	void ChangePriority(int songid, int newPriority){
+		tracklist[songid].first = newPriority;
+	}
 };
 
 
@@ -90,15 +94,37 @@ int main()
     auto* tmp = new TrackList();
     bool Shuffle = false;
     int choice = 0;
-
-    cout << "Shuffle? 0/1: ";
+    bool pChange = false;
+    int toChange;
+    int newPriority;
+    while(!pChange){
+	for(int i = 0; i < (int)tmp->tracklist.size();i++)
+	{
+		cout<<i+1 << ": "<< tmp->tracklist[i].second<<" Priority: "<< tmp->tracklist[i].first << endl;
+	}
+	
+	cout<< "Change priority? 0/1: \n";
+	cin >> pChange;
+	cout << "Select song number to change: /\n";
+	cin >> toChange;
+	cout<< "Current priority: " <<tmp->tracklist[toChange-1].first << "\nNew priority: ";
+	cin >> newPriority;
+	tmp->ChangePriority(toChange-1, newPriority);
+	for(int i = 0; i < (int)tmp->tracklist.size();i++)
+	{
+		cout<<i+1 << ": "<< tmp->tracklist[i].second<<" Priority: "<< tmp->tracklist[i].first << endl;
+	}
+	}
+	
+    cout << "Shuffle? 0/1: \n";
     cin >> Shuffle;
+    
 
     tmp->Start(Shuffle, Current);
 
     while (true)
     {
-        cout << "Next/Previous/Close 1/2/0: ";
+        cout << "Next/Previous/Close 1/2/0: \n";
         cin >> choice;
 
         if (choice == 0)
