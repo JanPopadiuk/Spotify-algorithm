@@ -97,7 +97,7 @@ int main()
     bool pChange = false;
     int toChange;
     int newPriority;
-    while(!pChange){
+    
 	for(int i = 0; i < (int)tmp->tracklist.size();i++)
 	{
 		cout<<i+1 << ": "<< tmp->tracklist[i].second<<" Priority: "<< tmp->tracklist[i].first << endl;
@@ -105,7 +105,9 @@ int main()
 	
 	cout<< "Change priority? 0/1: \n";
 	cin >> pChange;
-	cout << "Select song number to change: /\n";
+	while(pChange){
+	
+	cout << "Select song number to change: \n";
 	cin >> toChange;
 	cout<< "Current priority: " <<tmp->tracklist[toChange-1].first << "\nNew priority: ";
 	cin >> newPriority;
@@ -114,6 +116,8 @@ int main()
 	{
 		cout<<i+1 << ": "<< tmp->tracklist[i].second<<" Priority: "<< tmp->tracklist[i].first << endl;
 	}
+	cout<< "Change priority? 0/1: \n";
+	cin >> pChange;
 	}
 	
     cout << "Shuffle? 0/1: \n";
