@@ -4,7 +4,6 @@
 #include <QMainWindow>
 #include <vector>
 #include <string>
-
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -33,6 +32,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void Display(int curr);
+    void UpdateQueueList();
 
 protected:
     void showEvent(QShowEvent *event) override;
@@ -41,20 +41,16 @@ private slots:
     void on_btnNext_clicked();
     void on_btnPrev_clicked();
 
-
-    void on_checkBox_checkStateChanged(const Qt::CheckState &arg1);
-
-    void on_checkBox_toggled(bool checked);
-
-    void on_boxShuffle_toggled(bool checked);
-
     void on_boxShuffle_checkStateChanged(const Qt::CheckState &arg1);
+
+    void on_boxLoop_checkStateChanged(const Qt::CheckState &arg1);
 
 private:
     Ui::MainWindow *ui;
     TrackList *tmp;
     int Current;
     bool Shuffle;
+    bool Loop;
 };
 
 #endif // MAINWINDOW_H

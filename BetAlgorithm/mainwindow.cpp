@@ -2,7 +2,7 @@
 #include "./ui_mainwindow.h"
 #include <ctime>
 #include <cstdlib>
-#include <algorithm>
+//#include <algorithm>
 #include <string>
 TrackList::TrackList()
 {
@@ -49,6 +49,21 @@ std::string TrackList::GetTrack(int curr)
     return Queue[curr];
 }
 
+
+
+void MainWindow::on_boxShuffle_checkStateChanged(const Qt::CheckState &arg1)
+{
+    Shuffle = !Shuffle;
+    tmp->Start(Shuffle, Current);
+    this->Display(Current);
+    UpdateQueueList();
+}
+
+void MainWindow::on_boxLoop_checkStateChanged(const Qt::CheckState &arg1)
+{
+    Loop = !Loop;
+
+}
 void TrackList::Start(bool shuffle, int &curr)
 {
     Queue.clear();
@@ -78,15 +93,28 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     tmp = new TrackList();
     Current = 0;
-    Shuffle = true;
+    Shuffle = false;
+    Loop = false;
 }
 
+void MainWindow::UpdateQueueList()
+{
+    ui->listQueue->clear();
+    for (const auto &track : tmp->Queue)
+    {
+        ui->listQueue->addItem(QString::fromStdString(track));
+    }
+}
 void MainWindow::showEvent(QShowEvent *event)
 {
+
+
     QMainWindow::showEvent(event);
     tmp->Start(Shuffle, Current);
     this->Display(Current);
+    UpdateQueueList();
 }
+
 
 void MainWindow::Display(int curr){
         ui->txtSong->setText(QString::fromStdString(tmp->GetTrack(curr)));
@@ -94,17 +122,28 @@ void MainWindow::Display(int curr){
 void MainWindow::on_btnNext_clicked()
 {
     Current++;
-    if (Current >= (int)tmp->Queue.size())
+    if (Current >= (int)tmp->Queue.size()){
+        if(Loop == true){
         Current = 0;
+        }else{
+            Current = tmp->Queue.size()-1;
+        }
+    }
 
     this->Display(Current);
 }
 
 void MainWindow::on_btnPrev_clicked()
 {
+
     Current--;
-    if (Current < 0)
+    if (Current < 0){
+        if(Loop == true){
         Current = tmp->Queue.size() - 1;
+        }else{
+            Current = 0;
+        }
+    }
 
     this->Display(Current);
 }
