@@ -5,6 +5,7 @@ BetAlgorithm: \
   CMakeFiles/BetAlgorithm.dir/BetAlgorithm_autogen/mocs_compilation.cpp.o \
   CMakeFiles/BetAlgorithm.dir/main.cpp.o \
   CMakeFiles/BetAlgorithm.dir/mainwindow.cpp.o \
+  CMakeFiles/BetAlgorithm.dir/TrackList.cpp.o \
   /usr/lib/libQt6Widgets.so.6.10.1 \
   /usr/lib/libQt6Gui.so.6.10.1 \
   /usr/lib/libGLX.so \
@@ -82,6 +83,8 @@ CMakeFiles/BetAlgorithm.dir/BetAlgorithm_autogen/mocs_compilation.cpp.o:
 CMakeFiles/BetAlgorithm.dir/main.cpp.o:
 
 CMakeFiles/BetAlgorithm.dir/mainwindow.cpp.o:
+
+CMakeFiles/BetAlgorithm.dir/TrackList.cpp.o:
 
 /usr/lib/libQt6Widgets.so.6.10.1:
 

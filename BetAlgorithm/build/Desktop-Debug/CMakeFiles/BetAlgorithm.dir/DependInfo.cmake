@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "BetAlgorithm_autogen/timestamp" "custom" "BetAlgorithm_autogen/deps"
   "/home/jan/projekty/Spotify-algorithm/BetAlgorithm/build/Desktop-Debug/BetAlgorithm_autogen/mocs_compilation.cpp" "CMakeFiles/BetAlgorithm.dir/BetAlgorithm_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/BetAlgorithm.dir/BetAlgorithm_autogen/mocs_compilation.cpp.o.d"
+  "/home/jan/projekty/Spotify-algorithm/BetAlgorithm/TrackList.cpp" "CMakeFiles/BetAlgorithm.dir/TrackList.cpp.o" "gcc" "CMakeFiles/BetAlgorithm.dir/TrackList.cpp.o.d"
   "/home/jan/projekty/Spotify-algorithm/BetAlgorithm/main.cpp" "CMakeFiles/BetAlgorithm.dir/main.cpp.o" "gcc" "CMakeFiles/BetAlgorithm.dir/main.cpp.o.d"
   "/home/jan/projekty/Spotify-algorithm/BetAlgorithm/mainwindow.cpp" "CMakeFiles/BetAlgorithm.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/BetAlgorithm.dir/mainwindow.cpp.o.d"
   "" "BetAlgorithm" "gcc" "CMakeFiles/BetAlgorithm.dir/link.d"

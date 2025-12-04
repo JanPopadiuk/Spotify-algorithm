@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "BetAlgorithm_autogen/timestamp"
   "CMakeFiles/BetAlgorithm.dir/BetAlgorithm_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/BetAlgorithm.dir/BetAlgorithm_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/BetAlgorithm.dir/TrackList.cpp.o"
+  "CMakeFiles/BetAlgorithm.dir/TrackList.cpp.o.d"
   "CMakeFiles/BetAlgorithm.dir/main.cpp.o"
   "CMakeFiles/BetAlgorithm.dir/main.cpp.o.d"
   "CMakeFiles/BetAlgorithm.dir/mainwindow.cpp.o"

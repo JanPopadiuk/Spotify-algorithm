@@ -1,60 +1,12 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-#include <ctime>
-#include <cstdlib>
-//#include <algorithm>
-#include <string>
-TrackList::TrackList()
-{
-    tracklist.push_back({3,"Flashing lights"});
-    tracklist.push_back({3,"Power"});
-    tracklist.push_back({2,"Runaway"});
-    tracklist.push_back({1,"Heartless"});
-    tracklist.push_back({1,"Ghosttown"});
-}
+#include "TrackList.cpp"
 
-void TrackList::TLtoQL()
-{
-    qList.clear();
-    Queue.clear();
-
-    for (auto &t : tracklist)
-        for (int j = 0; j < t.first; j++)
-            qList.push_back(t.second);
-
-    Shuffle();
-}
-
-void TrackList::Shuffle()
-{
-    srand(time(nullptr));
-    while(!qList.empty())
-    {
-        int ran = rand() % qList.size();
-        std::string tmp = qList[ran];
-
-        Queue.push_back(tmp);
-
-
-        for (int i = qList.size() - 1; i >= 0; i--)
-        {
-            if (qList[i] == tmp)
-                qList.erase(qList.begin() + i);
-        }
-    }
-}
-
-std::string TrackList::GetTrack(int curr)
-{
-    return Queue[curr];
-}
-
-
-
+TrackList *TLptr;
 void MainWindow::on_boxShuffle_checkStateChanged(const Qt::CheckState &arg1)
 {
     Shuffle = !Shuffle;
-    tmp->Start(Shuffle, Current);
+    TLptr->Start(Shuffle, Current);
     this->Display(Current);
     UpdateQueueList();
 }
@@ -64,34 +16,13 @@ void MainWindow::on_boxLoop_checkStateChanged(const Qt::CheckState &arg1)
     Loop = !Loop;
 
 }
-void TrackList::Start(bool shuffle, int &curr)
-{
-    Queue.clear();
-
-    if (shuffle)
-    {
-        TLtoQL();
-        curr = 0;
-        return;
-    }
-
-    for (auto &t : tracklist)
-        Queue.push_back(t.second);
-
-    curr = 0;
-}
-
-void TrackList::ChangePriority(int songid, int newPriority)
-{
-    tracklist[songid].first = newPriority;
-}
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    tmp = new TrackList();
+    TLptr = new TrackList();
     Current = 0;
     Shuffle = false;
     Loop = false;
@@ -100,7 +31,7 @@ MainWindow::MainWindow(QWidget *parent)
 void MainWindow::UpdateQueueList()
 {
     ui->listQueue->clear();
-    for (const auto &track : tmp->Queue)
+    for (const auto &track : TLptr->Queue)
     {
         ui->listQueue->addItem(QString::fromStdString(track));
     }
@@ -110,23 +41,23 @@ void MainWindow::showEvent(QShowEvent *event)
 
 
     QMainWindow::showEvent(event);
-    tmp->Start(Shuffle, Current);
+    TLptr->Start(Shuffle, Current);
     this->Display(Current);
     UpdateQueueList();
 }
 
 
 void MainWindow::Display(int curr){
-        ui->txtSong->setText(QString::fromStdString(tmp->GetTrack(curr)));
+        ui->txtSong->setText(QString::fromStdString(TLptr->GetTrack(curr)));
 }
 void MainWindow::on_btnNext_clicked()
 {
     Current++;
-    if (Current >= (int)tmp->Queue.size()){
+    if (Current >= (int)TLptr->Queue.size()){
         if(Loop == true){
         Current = 0;
         }else{
-            Current = tmp->Queue.size()-1;
+            Current = TLptr->Queue.size()-1;
         }
     }
 
@@ -139,7 +70,7 @@ void MainWindow::on_btnPrev_clicked()
     Current--;
     if (Current < 0){
         if(Loop == true){
-        Current = tmp->Queue.size() - 1;
+        Current = TLptr->Queue.size() - 1;
         }else{
             Current = 0;
         }
@@ -151,7 +82,7 @@ void MainWindow::on_btnPrev_clicked()
 MainWindow::~MainWindow()
 {
     delete ui;
-    delete tmp;
+    delete TLptr;
 }
 
 

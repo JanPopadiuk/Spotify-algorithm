@@ -224,6 +224,30 @@ BetAlgorithm_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BetAlgorithm.dir/build.make CMakeFiles/BetAlgorithm.dir/BetAlgorithm_autogen/mocs_compilation.cpp.s
 .PHONY : BetAlgorithm_autogen/mocs_compilation.cpp.s
 
+TrackList.o: TrackList.cpp.o
+.PHONY : TrackList.o
+
+# target to build an object file
+TrackList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BetAlgorithm.dir/build.make CMakeFiles/BetAlgorithm.dir/TrackList.cpp.o
+.PHONY : TrackList.cpp.o
+
+TrackList.i: TrackList.cpp.i
+.PHONY : TrackList.i
+
+# target to preprocess a source file
+TrackList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BetAlgorithm.dir/build.make CMakeFiles/BetAlgorithm.dir/TrackList.cpp.i
+.PHONY : TrackList.cpp.i
+
+TrackList.s: TrackList.cpp.s
+.PHONY : TrackList.s
+
+# target to generate assembly for a file
+TrackList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BetAlgorithm.dir/build.make CMakeFiles/BetAlgorithm.dir/TrackList.cpp.s
+.PHONY : TrackList.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -290,6 +314,9 @@ help:
 	@echo "... BetAlgorithm_autogen/mocs_compilation.o"
 	@echo "... BetAlgorithm_autogen/mocs_compilation.i"
 	@echo "... BetAlgorithm_autogen/mocs_compilation.s"
+	@echo "... TrackList.o"
+	@echo "... TrackList.i"
+	@echo "... TrackList.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
