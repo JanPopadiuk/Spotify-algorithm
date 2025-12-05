@@ -793,6 +793,7 @@ BetAlgorithm: /usr/lib/Scrt1.o \
   CMakeFiles/BetAlgorithm.dir/mainwindow.cpp.o
 
 CMakeFiles/BetAlgorithm.dir/BetAlgorithm_autogen/mocs_compilation.cpp.o: BetAlgorithm_autogen/mocs_compilation.cpp \
+  /home/jan/projekty/Spotify-algorithm/BetAlgorithm/TrackList.h \
   /home/jan/projekty/Spotify-algorithm/BetAlgorithm/mainwindow.h \
   BetAlgorithm_autogen/EWIEGA46WW/moc_mainwindow.cpp \
   /usr/include/alloca.h \
@@ -1413,6 +1414,7 @@ CMakeFiles/BetAlgorithm.dir/TrackList.cpp.o: /home/jan/projekty/Spotify-algorith
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h
 
 CMakeFiles/BetAlgorithm.dir/main.cpp.o: /home/jan/projekty/Spotify-algorithm/BetAlgorithm/main.cpp \
+  /home/jan/projekty/Spotify-algorithm/BetAlgorithm/TrackList.h \
   /home/jan/projekty/Spotify-algorithm/BetAlgorithm/mainwindow.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -1889,7 +1891,6 @@ CMakeFiles/BetAlgorithm.dir/main.cpp.o: /home/jan/projekty/Spotify-algorithm/Bet
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
 
 CMakeFiles/BetAlgorithm.dir/mainwindow.cpp.o: /home/jan/projekty/Spotify-algorithm/BetAlgorithm/mainwindow.cpp \
-  /home/jan/projekty/Spotify-algorithm/BetAlgorithm/TrackList.cpp \
   /home/jan/projekty/Spotify-algorithm/BetAlgorithm/TrackList.h \
   BetAlgorithm_autogen/include/ui_mainwindow.h \
   /home/jan/projekty/Spotify-algorithm/BetAlgorithm/mainwindow.h \

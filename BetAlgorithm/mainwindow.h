@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include "TrackList.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -34,6 +34,7 @@ private:
     int Current;
     bool Shuffle;
     bool Loop;
+    TrackList *TLptr;
 };
 
 #endif // MAINWINDOW_H

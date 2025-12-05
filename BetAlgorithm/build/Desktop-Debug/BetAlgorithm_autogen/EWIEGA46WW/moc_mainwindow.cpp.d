@@ -1,5 +1,6 @@
 /home/jan/projekty/Spotify-algorithm/BetAlgorithm/build/Desktop-Debug/BetAlgorithm_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/jan/projekty/Spotify-algorithm/BetAlgorithm/mainwindow.h \
   /home/jan/projekty/Spotify-algorithm/BetAlgorithm/build/Desktop-Debug/BetAlgorithm_autogen/moc_predefs.h \
+  /home/jan/projekty/Spotify-algorithm/BetAlgorithm/TrackList.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \

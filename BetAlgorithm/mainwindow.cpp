@@ -1,8 +1,8 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-#include "TrackList.cpp"
 
-TrackList *TLptr;
+
+
 void MainWindow::on_boxShuffle_checkStateChanged(const Qt::CheckState &arg1)
 {
     Shuffle = !Shuffle;
@@ -22,6 +22,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
     TLptr = new TrackList();
     Current = 0;
     Shuffle = false;

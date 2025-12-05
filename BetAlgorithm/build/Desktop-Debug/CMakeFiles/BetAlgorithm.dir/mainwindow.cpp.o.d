@@ -346,6 +346,7 @@ CMakeFiles/BetAlgorithm.dir/mainwindow.cpp.o: \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
  /usr/include/qt6/QtWidgets/qtabwidget.h \
+ /home/jan/projekty/Spotify-algorithm/BetAlgorithm/TrackList.h \
  /home/jan/projekty/Spotify-algorithm/BetAlgorithm/build/Desktop-Debug/BetAlgorithm_autogen/include/./ui_mainwindow.h \
  /usr/include/qt6/QtCore/QVariant /usr/include/qt6/QtCore/qvariant.h \
  /usr/include/qt6/QtGui/QAction /usr/include/qt6/QtGui/qaction.h \
@@ -390,6 +391,4 @@ CMakeFiles/BetAlgorithm.dir/mainwindow.cpp.o: \
  /usr/include/qt6/QtWidgets/qpushbutton.h \
  /usr/include/qt6/QtWidgets/QStatusBar \
  /usr/include/qt6/QtWidgets/qstatusbar.h \
- /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
- /home/jan/projekty/Spotify-algorithm/BetAlgorithm/TrackList.cpp \
- /home/jan/projekty/Spotify-algorithm/BetAlgorithm/TrackList.h
+ /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h
