@@ -37,6 +37,14 @@ void MainWindow::UpdateQueueList()
         ui->listQueue->addItem(QString::fromStdString(track));
     }
 }
+void MainWindow::UpdateTrackQList()
+{
+    ui->listSongList->clear();
+    for (int i = 0; i < (int)TLptr->tracklist.size(); i++)
+    {
+        ui->listSongList->addItem(QString::fromStdString(TLptr->tracklist[i].first)+"."+QString::fromStdString(TLptr->tracklist[i].second));
+    }
+}
 void MainWindow::showEvent(QShowEvent *event)
 {
 

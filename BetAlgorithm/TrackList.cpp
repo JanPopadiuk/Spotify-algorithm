@@ -7,6 +7,7 @@ TrackList::TrackList()
     tracklist.push_back({2,"Runaway"});
     tracklist.push_back({1,"Heartless"});
     tracklist.push_back({1,"Ghosttown"});
+    tracklist.push_back({2,"On Sight"});
 }
 
 void TrackList::TLtoQL()

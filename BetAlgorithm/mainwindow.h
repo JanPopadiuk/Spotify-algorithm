@@ -17,6 +17,7 @@ public:
     ~MainWindow();
     void Display(int curr);
     void UpdateQueueList();
+    void UpdateTrackQList();
 
 protected:
     void showEvent(QShowEvent *event) override;

@@ -2316,7 +2316,6 @@ CMakeFiles/BetAlgorithm.dir/mainwindow.cpp.o: /home/jan/projekty/Spotify-algorit
   /usr/include/qt6/QtCore/qversiontagging.h \
   /usr/include/qt6/QtCore/qxptype_traits.h \
   /usr/include/qt6/QtCore/qyieldcpu.h \
-  /usr/include/qt6/QtGui/QAction \
   /usr/include/qt6/QtGui/qaction.h \
   /usr/include/qt6/QtGui/qbitmap.h \
   /usr/include/qt6/QtGui/qbrush.h \
@@ -2351,9 +2350,12 @@ CMakeFiles/BetAlgorithm.dir/mainwindow.cpp.o: /home/jan/projekty/Spotify-algorit
   /usr/include/qt6/QtWidgets/QApplication \
   /usr/include/qt6/QtWidgets/QCheckBox \
   /usr/include/qt6/QtWidgets/QLabel \
+  /usr/include/qt6/QtWidgets/QListView \
   /usr/include/qt6/QtWidgets/QListWidget \
   /usr/include/qt6/QtWidgets/QMainWindow \
   /usr/include/qt6/QtWidgets/QPushButton \
+  /usr/include/qt6/QtWidgets/QSpinBox \
+  /usr/include/qt6/QtWidgets/QStackedWidget \
   /usr/include/qt6/QtWidgets/QStatusBar \
   /usr/include/qt6/QtWidgets/QWidget \
   /usr/include/qt6/QtWidgets/qabstractbutton.h \
@@ -2373,6 +2375,8 @@ CMakeFiles/BetAlgorithm.dir/mainwindow.cpp.o: /home/jan/projekty/Spotify-algorit
   /usr/include/qt6/QtWidgets/qrubberband.h \
   /usr/include/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/qt6/QtWidgets/qslider.h \
+  /usr/include/qt6/QtWidgets/qspinbox.h \
+  /usr/include/qt6/QtWidgets/qstackedwidget.h \
   /usr/include/qt6/QtWidgets/qstatusbar.h \
   /usr/include/qt6/QtWidgets/qstyle.h \
   /usr/include/qt6/QtWidgets/qstyleoption.h \
@@ -2427,7 +2431,11 @@ CMakeFiles/BetAlgorithm.dir/mainwindow.cpp.o: /home/jan/projekty/Spotify-algorit
 
 /usr/include/qt6/QtWidgets/QStatusBar:
 
+/usr/include/qt6/QtWidgets/QSpinBox:
+
 /usr/include/qt6/QtWidgets/QPushButton:
+
+/usr/include/qt6/QtWidgets/QListView:
 
 /usr/include/qt6/QtWidgets/QCheckBox:
 
@@ -2679,6 +2687,8 @@ CMakeFiles/BetAlgorithm.dir/BetAlgorithm_autogen/mocs_compilation.cpp.o:
 
 /usr/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake:
 
+/usr/include/qt6/QtWidgets/qstackedwidget.h:
+
 /usr/lib/cmake/Qt6Gui/Qt6QTsLibPluginConfig.cmake:
 
 /usr/include/qt6/QtCore/qtmocconstants.h:
@@ -2748,8 +2758,6 @@ CMakeFiles/BetAlgorithm.dir/BetAlgorithm_autogen/mocs_compilation.cpp.o:
 /usr/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake:
 
 /usr/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake:
-
-/usr/include/qt6/QtGui/QAction:
 
 /usr/lib/cmake/Qt6Gui/Qt6QGtk3ThemePluginAdditionalTargetInfo.cmake:
 
@@ -3195,6 +3203,8 @@ CMakeFiles/4.2.0/CMakeCXXCompiler.cmake:
 
 /usr/include/bits/pthreadtypes-arch.h:
 
+/usr/include/qt6/QtWidgets/QStackedWidget:
+
 /usr/include/c++/15.2.1/bits/atomic_base.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
@@ -3202,6 +3212,8 @@ CMakeFiles/4.2.0/CMakeCXXCompiler.cmake:
 /home/jan/projekty/Spotify-algorithm/BetAlgorithm/mainwindow.cpp:
 
 /usr/include/c++/15.2.1/bits/stl_bvector.h:
+
+/usr/include/qt6/QtWidgets/qspinbox.h:
 
 BetAlgorithm_autogen/moc_predefs.h:
 
