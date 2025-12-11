@@ -24,9 +24,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(BetAlgorithm
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        TrackList.cpp
+
         TrackList.h
-        txtTrackList
+        songlist.txt
+        TrackList.cpp
+
+
 
     )
 # Define target properties for Android with Qt 6 as:

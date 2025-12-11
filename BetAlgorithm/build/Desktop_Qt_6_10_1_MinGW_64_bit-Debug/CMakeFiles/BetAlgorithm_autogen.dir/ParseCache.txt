@@ -375,8 +375,11 @@ C:/Users/janic/OneDrive/Pulpit/Betalgorithm/Spotify-algorithm/BetAlgorithm/mainw
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+ mdp:C:/Users/janic/OneDrive/Pulpit/Betalgorithm/Spotify-algorithm/BetAlgorithm/TrackList.h
  mdp:C:/Users/janic/OneDrive/Pulpit/Betalgorithm/Spotify-algorithm/BetAlgorithm/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/BetAlgorithm_autogen/moc_predefs.h
  mdp:C:/Users/janic/OneDrive/Pulpit/Betalgorithm/Spotify-algorithm/BetAlgorithm/mainwindow.h
+C:/Users/janic/OneDrive/Pulpit/Betalgorithm/Spotify-algorithm/BetAlgorithm/TrackList.h
 C:/Users/janic/OneDrive/Pulpit/Betalgorithm/Spotify-algorithm/BetAlgorithm/main.cpp
 C:/Users/janic/OneDrive/Pulpit/Betalgorithm/Spotify-algorithm/BetAlgorithm/mainwindow.cpp
  uic:./ui_mainwindow.h
+C:/Users/janic/OneDrive/Pulpit/Betalgorithm/Spotify-algorithm/BetAlgorithm/TrackList.cpp

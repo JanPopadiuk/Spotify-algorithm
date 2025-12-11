@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-c7a4230434392b6b468a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "BetAlgorithm",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BetAlgorithm::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BetAlgorithm-Debug-af0f54e58b96f59c550b.json",
+					"name" : "BetAlgorithm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "BetAlgorithm_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BetAlgorithm_autogen-Debug-11a60e918ee37f2a6c13.json",
+					"name" : "BetAlgorithm_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "BetAlgorithm_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BetAlgorithm_autogen_timestamp_deps-Debug-677f55cf96862a6450e5.json",
+					"name" : "BetAlgorithm_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/janic/OneDrive/Pulpit/Betalgorithm/Spotify-algorithm/BetAlgorithm/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug",
+		"source" : "C:/Users/janic/OneDrive/Pulpit/Betalgorithm/Spotify-algorithm/BetAlgorithm"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

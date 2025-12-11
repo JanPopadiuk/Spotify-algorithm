@@ -5,12 +5,14 @@
 #include <ctime>
 #include <cstdlib>
 #include <string>
+
 class TrackList
 {
 public:
     std::vector<std::pair<int, std::string>> tracklist;
     std::vector<std::string> qList;
     std::vector<std::string> Queue;
+
 
      TrackList();
      void TLtoQL();

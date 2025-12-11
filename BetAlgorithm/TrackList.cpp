@@ -1,13 +1,30 @@
 #include "TrackList.h"
-
+#include <fstream>
 TrackList::TrackList()
 {
-    tracklist.push_back({3,"Flashing lights"});
-    tracklist.push_back({3,"Power"});
-    tracklist.push_back({2,"Runaway"});
-    tracklist.push_back({1,"Heartless"});
-    tracklist.push_back({1,"Ghosttown"});
-    tracklist.push_back({2,"On Sight"});
+    std::ifstream file("songlist.txt");
+
+    std::string LineFromFile;
+    if (!file) {
+        tracklist.push_back({1,"File couldn't be open"});
+    }
+
+    while (std::getline(file, LineFromFile)){
+
+        std::string Priority = LineFromFile.substr(0,1);
+        int intPriority = stoi(Priority);
+        std::string SongName = LineFromFile.substr(2);
+        tracklist.push_back({intPriority,SongName});
+
+    }
+
+    file.close();
+    // tracklist.push_back({3,"Flashing lights"});
+    // tracklist.push_back({3,"Power"});
+    // tracklist.push_back({2,"Runaway"});
+    // tracklist.push_back({1,"Heartless"});
+    // tracklist.push_back({1,"Ghosttown"});
+    // tracklist.push_back({2,"On Sight"});
 }
 
 void TrackList::TLtoQL()
