@@ -45,7 +45,12 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "on_boxShuffle_checkStateChanged",
         "Qt::CheckState",
         "arg1",
-        "on_boxLoop_checkStateChanged"
+        "on_boxLoop_checkStateChanged",
+        "on_btnUpdateQueueList_clicked",
+        "on_btnUpdateTrackList_clicked",
+        "on_spinNewPriority_valueChanged",
+        "on_spinChangeId_valueChanged",
+        "on_butConfirmChange_clicked"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -61,6 +66,20 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         QtMocHelpers::SlotData<void(const Qt::CheckState &)>(7, 2, QMC::AccessPrivate, QMetaType::Void, {{
             { 0x80000000 | 5, 6 },
         }}),
+        // Slot 'on_btnUpdateQueueList_clicked'
+        QtMocHelpers::SlotData<void()>(8, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_btnUpdateTrackList_clicked'
+        QtMocHelpers::SlotData<void()>(9, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_spinNewPriority_valueChanged'
+        QtMocHelpers::SlotData<void(int)>(10, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 6 },
+        }}),
+        // Slot 'on_spinChangeId_valueChanged'
+        QtMocHelpers::SlotData<void(int)>(11, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 6 },
+        }}),
+        // Slot 'on_butConfirmChange_clicked'
+        QtMocHelpers::SlotData<void()>(12, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -88,6 +107,11 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 1: _t->on_btnPrev_clicked(); break;
         case 2: _t->on_boxShuffle_checkStateChanged((*reinterpret_cast<std::add_pointer_t<Qt::CheckState>>(_a[1]))); break;
         case 3: _t->on_boxLoop_checkStateChanged((*reinterpret_cast<std::add_pointer_t<Qt::CheckState>>(_a[1]))); break;
+        case 4: _t->on_btnUpdateQueueList_clicked(); break;
+        case 5: _t->on_btnUpdateTrackList_clicked(); break;
+        case 6: _t->on_spinNewPriority_valueChanged((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 7: _t->on_spinChangeId_valueChanged((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 8: _t->on_butConfirmChange_clicked(); break;
         default: ;
         }
     }
@@ -112,14 +136,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 9;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 9)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 9;
     }
     return _id;
 }

@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <string>
 #include "TrackList.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -30,12 +31,26 @@ private slots:
 
     void on_boxLoop_checkStateChanged(const Qt::CheckState &arg1);
 
+
+    void on_btnUpdateQueueList_clicked();
+
+    void on_btnUpdateTrackList_clicked();
+
+
+    void on_spinNewPriority_valueChanged(int arg1);
+
+    void on_spinChangeId_valueChanged(int arg1);
+
+    void on_butConfirmChange_clicked();
+
 private:
     Ui::MainWindow *ui;
     int Current;
     bool Shuffle;
     bool Loop;
     TrackList *TLptr;
+    int newPriority;
+    int selectedElement;
 };
 
 #endif // MAINWINDOW_H

@@ -29,6 +29,15 @@ MainWindow::MainWindow(QWidget *parent)
     Loop = false;
 }
 
+void MainWindow::on_btnUpdateQueueList_clicked()
+{
+    UpdateQueueList();
+}
+void MainWindow::on_btnUpdateTrackList_clicked()
+{
+    UpdateTrackQList();
+}
+
 void MainWindow::UpdateQueueList()
 {
     ui->listQueue->clear();
@@ -39,10 +48,12 @@ void MainWindow::UpdateQueueList()
 }
 void MainWindow::UpdateTrackQList()
 {
-    ui->listSongList->clear();
+    ui->listQueue->clear();
     for (int i = 0; i < (int)TLptr->tracklist.size(); i++)
     {
-        ui->listSongList->addItem(QString::fromStdString(TLptr->tracklist[i].first)+"."+QString::fromStdString(TLptr->tracklist[i].second));
+        std::string tmp = std::to_string(TLptr->tracklist[i].first);
+        std::string num = std::to_string(i+1);
+        ui->listQueue->addItem(QString::fromStdString(num)+"."+QString::fromStdString(TLptr->tracklist[i].second)+" priority: "+QString::fromStdString(tmp));
     }
 }
 void MainWindow::showEvent(QShowEvent *event)
@@ -88,12 +99,36 @@ void MainWindow::on_btnPrev_clicked()
     this->Display(Current);
 }
 
+
+
 MainWindow::~MainWindow()
 {
     delete ui;
     delete TLptr;
 }
 
+void MainWindow::on_spinNewPriority_valueChanged(int arg1)
+{
+
+    newPriority = arg1;
+}
 
 
+
+void MainWindow::on_spinChangeId_valueChanged(int arg1)
+{
+    selectedElement = arg1;
+}
+
+
+
+void MainWindow::on_butConfirmChange_clicked()
+{
+    if(selectedElement < 1){
+        selectedElement = 1;
+    }
+    TLptr->tracklist[selectedElement-1].first = newPriority;
+    UpdateTrackQList();
+
+}
 

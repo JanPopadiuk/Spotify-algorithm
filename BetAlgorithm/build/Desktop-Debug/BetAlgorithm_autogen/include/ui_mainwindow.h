@@ -13,12 +13,10 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QListView>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpinBox>
-#include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
@@ -35,16 +33,12 @@ public:
     QCheckBox *boxShuffle;
     QCheckBox *boxLoop;
     QListWidget *listQueue;
-    QLabel *txtQueue;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QStackedWidget *settingswidget;
-    QWidget *page_1;
-    QListView *listSongList;
+    QPushButton *btnUpdateQueueList;
+    QPushButton *btnUpdateTrackList;
     QSpinBox *spinChangeId;
-    QSpinBox *spinNewPriority;
     QLabel *label;
     QLabel *label_2;
+    QSpinBox *spinNewPriority;
     QPushButton *butConfirmChange;
     QStatusBar *statusbar;
 
@@ -81,40 +75,28 @@ public:
         boxLoop->setStyleSheet(QString::fromUtf8(""));
         listQueue = new QListWidget(centralwidget);
         listQueue->setObjectName("listQueue");
-        listQueue->setGeometry(QRect(320, 90, 256, 251));
-        txtQueue = new QLabel(centralwidget);
-        txtQueue->setObjectName("txtQueue");
-        txtQueue->setGeometry(QRect(330, 60, 63, 20));
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(10, 10, 90, 29));
-        pushButton_2 = new QPushButton(centralwidget);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(110, 10, 90, 29));
-        settingswidget = new QStackedWidget(centralwidget);
-        settingswidget->setObjectName("settingswidget");
-        settingswidget->setGeometry(QRect(50, 40, 411, 261));
-        page_1 = new QWidget();
-        page_1->setObjectName("page_1");
-        listSongList = new QListView(page_1);
-        listSongList->setObjectName("listSongList");
-        listSongList->setGeometry(QRect(20, 20, 256, 192));
-        spinChangeId = new QSpinBox(page_1);
+        listQueue->setGeometry(QRect(320, 90, 256, 201));
+        btnUpdateQueueList = new QPushButton(centralwidget);
+        btnUpdateQueueList->setObjectName("btnUpdateQueueList");
+        btnUpdateQueueList->setGeometry(QRect(320, 50, 90, 29));
+        btnUpdateTrackList = new QPushButton(centralwidget);
+        btnUpdateTrackList->setObjectName("btnUpdateTrackList");
+        btnUpdateTrackList->setGeometry(QRect(430, 50, 90, 29));
+        spinChangeId = new QSpinBox(centralwidget);
         spinChangeId->setObjectName("spinChangeId");
-        spinChangeId->setGeometry(QRect(290, 60, 42, 24));
-        spinNewPriority = new QSpinBox(page_1);
-        spinNewPriority->setObjectName("spinNewPriority");
-        spinNewPriority->setGeometry(QRect(290, 120, 42, 24));
-        label = new QLabel(page_1);
+        spinChangeId->setGeometry(QRect(330, 320, 42, 24));
+        label = new QLabel(centralwidget);
         label->setObjectName("label");
-        label->setGeometry(QRect(290, 30, 91, 16));
-        label_2 = new QLabel(page_1);
+        label->setGeometry(QRect(320, 300, 91, 16));
+        label_2 = new QLabel(centralwidget);
         label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(290, 100, 81, 16));
-        butConfirmChange = new QPushButton(page_1);
+        label_2->setGeometry(QRect(440, 300, 81, 16));
+        spinNewPriority = new QSpinBox(centralwidget);
+        spinNewPriority->setObjectName("spinNewPriority");
+        spinNewPriority->setGeometry(QRect(440, 320, 42, 24));
+        butConfirmChange = new QPushButton(centralwidget);
         butConfirmChange->setObjectName("butConfirmChange");
-        butConfirmChange->setGeometry(QRect(290, 160, 80, 23));
-        settingswidget->addWidget(page_1);
+        butConfirmChange->setGeometry(QRect(510, 320, 80, 23));
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -123,7 +105,6 @@ public:
         retranslateUi(MainWindow);
 
         btnNext->setDefault(false);
-        settingswidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -141,9 +122,8 @@ public:
         txtSong->setText(QString());
         boxShuffle->setText(QCoreApplication::translate("MainWindow", "Shuffle", nullptr));
         boxLoop->setText(QCoreApplication::translate("MainWindow", "Loop", nullptr));
-        txtQueue->setText(QCoreApplication::translate("MainWindow", "Queue:", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Main", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Options", nullptr));
+        btnUpdateQueueList->setText(QCoreApplication::translate("MainWindow", "Queue", nullptr));
+        btnUpdateTrackList->setText(QCoreApplication::translate("MainWindow", "Track list", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "Number of song", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "New priority", nullptr));
         butConfirmChange->setText(QCoreApplication::translate("MainWindow", "Confirm", nullptr));

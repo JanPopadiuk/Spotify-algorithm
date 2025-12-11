@@ -122,132 +122,94 @@
       <x>320</x>
       <y>90</y>
       <width>256</width>
-      <height>251</height>
+      <height>201</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="txtQueue">
+   <widget class="QPushButton" name="btnUpdateQueueList">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>50</y>
+      <width>90</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Queue</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnUpdateTrackList">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>50</y>
+      <width>90</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Track list</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinChangeId">
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>60</y>
-      <width>63</width>
-      <height>20</height>
+      <y>320</y>
+      <width>42</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>300</y>
+      <width>91</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Queue:</string>
+     <string>Number of song</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>90</width>
-      <height>29</height>
+      <x>440</x>
+      <y>300</y>
+      <width>81</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Main</string>
+     <string>New priority</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QSpinBox" name="spinNewPriority">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>10</y>
-      <width>90</width>
-      <height>29</height>
+      <x>440</x>
+      <y>320</y>
+      <width>42</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="butConfirmChange">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>320</y>
+      <width>80</width>
+      <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>Options</string>
+     <string>Confirm</string>
     </property>
-   </widget>
-   <widget class="QStackedWidget" name="settingswidget">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>40</y>
-      <width>411</width>
-      <height>261</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="page_1">
-     <widget class="QListView" name="listSongList">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>256</width>
-        <height>192</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="spinChangeId">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>60</y>
-        <width>42</width>
-        <height>24</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="spinNewPriority">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>120</y>
-        <width>42</width>
-        <height>24</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>30</y>
-        <width>91</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Number of song</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>100</y>
-        <width>81</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>New priority</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="butConfirmChange">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>160</y>
-        <width>80</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Confirm</string>
-      </property>
-     </widget>
-    </widget>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
