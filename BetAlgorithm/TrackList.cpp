@@ -1,24 +1,20 @@
 #include "TrackList.h"
-#include <fstream>
 TrackList::TrackList()
 {
     std::ifstream file("songlist.txt");
-
     std::string LineFromFile;
-    if (!file) {
-        tracklist.push_back({1,"File couldn't be open"});
-    }
-
-    while (std::getline(file, LineFromFile)){
-
+    if(!file.is_open())
+    tracklist.push_back({0,"Couldn't open file"});
+    while(getline(file,LineFromFile)) {
         std::string Priority = LineFromFile.substr(0,1);
         int intPriority = stoi(Priority);
         std::string SongName = LineFromFile.substr(2);
         tracklist.push_back({intPriority,SongName});
 
     }
-
     file.close();
+
+
     // tracklist.push_back({3,"Flashing lights"});
     // tracklist.push_back({3,"Power"});
     // tracklist.push_back({2,"Runaway"});
@@ -86,3 +82,6 @@ void TrackList::ChangePriority(int songid, int newPriority)
     tracklist[songid].first = newPriority;
 }
 
+void TrackList::SaveToFile(){
+    std::ostream file("songlist.txt");
+}

@@ -89,6 +89,7 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/bits/xopen_lim.h \
   /usr/include/c++/15.2.1/algorithm \
@@ -104,11 +105,14 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
   /usr/include/c++/15.2.1/bits/allocator.h \
   /usr/include/c++/15.2.1/bits/atomic_base.h \
   /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/15.2.1/bits/basic_ios.h \
+  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
   /usr/include/c++/15.2.1/bits/basic_string.h \
   /usr/include/c++/15.2.1/bits/basic_string.tcc \
   /usr/include/c++/15.2.1/bits/char_traits.h \
   /usr/include/c++/15.2.1/bits/charconv.h \
   /usr/include/c++/15.2.1/bits/chrono.h \
+  /usr/include/c++/15.2.1/bits/codecvt.h \
   /usr/include/c++/15.2.1/bits/concept_check.h \
   /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
@@ -118,6 +122,7 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
   /usr/include/c++/15.2.1/bits/exception.h \
   /usr/include/c++/15.2.1/bits/exception_defines.h \
   /usr/include/c++/15.2.1/bits/exception_ptr.h \
+  /usr/include/c++/15.2.1/bits/fstream.tcc \
   /usr/include/c++/15.2.1/bits/functexcept.h \
   /usr/include/c++/15.2.1/bits/functional_hash.h \
   /usr/include/c++/15.2.1/bits/hash_bytes.h \
@@ -125,9 +130,12 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
   /usr/include/c++/15.2.1/bits/hashtable_policy.h \
   /usr/include/c++/15.2.1/bits/invoke.h \
   /usr/include/c++/15.2.1/bits/ios_base.h \
+  /usr/include/c++/15.2.1/bits/istream.tcc \
   /usr/include/c++/15.2.1/bits/list.tcc \
   /usr/include/c++/15.2.1/bits/locale_classes.h \
   /usr/include/c++/15.2.1/bits/locale_classes.tcc \
+  /usr/include/c++/15.2.1/bits/locale_facets.h \
+  /usr/include/c++/15.2.1/bits/locale_facets.tcc \
   /usr/include/c++/15.2.1/bits/localefwd.h \
   /usr/include/c++/15.2.1/bits/memory_resource.h \
   /usr/include/c++/15.2.1/bits/memoryfwd.h \
@@ -135,6 +143,8 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
   /usr/include/c++/15.2.1/bits/nested_exception.h \
   /usr/include/c++/15.2.1/bits/new_allocator.h \
   /usr/include/c++/15.2.1/bits/node_handle.h \
+  /usr/include/c++/15.2.1/bits/ostream.h \
+  /usr/include/c++/15.2.1/bits/ostream.tcc \
   /usr/include/c++/15.2.1/bits/ostream_insert.h \
   /usr/include/c++/15.2.1/bits/parse_numbers.h \
   /usr/include/c++/15.2.1/bits/postypes.h \
@@ -201,6 +211,7 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
   /usr/include/c++/15.2.1/cstring \
   /usr/include/c++/15.2.1/ctime \
   /usr/include/c++/15.2.1/cwchar \
+  /usr/include/c++/15.2.1/cwctype \
   /usr/include/c++/15.2.1/debug/assertions.h \
   /usr/include/c++/15.2.1/debug/debug.h \
   /usr/include/c++/15.2.1/exception \
@@ -211,9 +222,12 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
   /usr/include/c++/15.2.1/ext/numeric_traits.h \
   /usr/include/c++/15.2.1/ext/string_conversions.h \
   /usr/include/c++/15.2.1/ext/type_traits.h \
+  /usr/include/c++/15.2.1/fstream \
   /usr/include/c++/15.2.1/functional \
   /usr/include/c++/15.2.1/initializer_list \
+  /usr/include/c++/15.2.1/ios \
   /usr/include/c++/15.2.1/iosfwd \
+  /usr/include/c++/15.2.1/istream \
   /usr/include/c++/15.2.1/iterator \
   /usr/include/c++/15.2.1/limits \
   /usr/include/c++/15.2.1/list \
@@ -222,6 +236,7 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
   /usr/include/c++/15.2.1/new \
   /usr/include/c++/15.2.1/numeric \
   /usr/include/c++/15.2.1/optional \
+  /usr/include/c++/15.2.1/ostream \
   /usr/include/c++/15.2.1/pstl/execution_defs.h \
   /usr/include/c++/15.2.1/pstl/glue_numeric_defs.h \
   /usr/include/c++/15.2.1/pstl/pstl_config.h \
@@ -254,10 +269,14 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
   /usr/include/c++/15.2.1/vector \
   /usr/include/c++/15.2.1/version \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
+  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
@@ -451,6 +470,7 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
   /usr/include/sys/types.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
+  /usr/include/wctype.h \
   /usr/lib/cmake/Qt6/FindWrapAtomic.cmake \
   /usr/lib/cmake/Qt6/FindWrapOpenGL.cmake \
   /usr/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake \
@@ -742,8 +762,6 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
 
 /usr/share/cmake/Modules/Linker/GNU.cmake:
 
-/usr/share/cmake/Modules/Linker/GNU-CXX.cmake:
-
 /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake:
 
 /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:
@@ -946,8 +964,6 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
 
 /usr/lib/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginTargets.cmake:
 
-/usr/lib/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets.cmake:
-
 /usr/lib/cmake/Qt6Gui/Qt6QTsLibPluginAdditionalTargetInfo.cmake:
 
 /usr/lib/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets-relwithdebinfo.cmake:
@@ -955,12 +971,6 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
 /usr/lib/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginConfig.cmake:
 
 /usr/lib/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginAdditionalTargetInfo.cmake:
-
-/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6QXcbIntegrationPluginConfig.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginTargets.cmake:
 
 /usr/lib/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginTargets-relwithdebinfo.cmake:
 
@@ -970,25 +980,37 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
 
 /usr/lib/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginConfig.cmake:
 
-/usr/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake:
+/usr/lib/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginAdditionalTargetInfo.cmake:
 
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
+/usr/lib/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets-relwithdebinfo.cmake:
 
-/usr/lib/cmake/Qt6Gui/Qt6QLibInputPluginTargets.cmake:
+/usr/lib/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginConfig.cmake:
 
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
+/usr/lib/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginAdditionalTargetInfo.cmake:
 
-/usr/include/bits/types/__sigset_t.h:
+/usr/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake:
 
-/usr/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:
+/usr/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake:
 
-/usr/include/c++/15.2.1/variant:
+/usr/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake:
 
-/usr/include/c++/15.2.1/initializer_list:
+/usr/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:
 
-/usr/include/c++/15.2.1/unordered_set:
+/usr/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:
 
-/usr/include/qt6/QtCore/qcompare_impl.h:
+/usr/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake:
+
+/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake:
+
+/usr/lib/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginTargets-relwithdebinfo.cmake:
+
+/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets-relwithdebinfo.cmake:
+
+/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake:
+
+/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake:
+
+/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake:
 
 /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc:
 
@@ -1006,15 +1028,17 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
 
 /usr/include/c++/15.2.1/ratio:
 
-/usr/include/qt6/QtGui/qcursor.h:
-
-/usr/include/c++/15.2.1/tr1/exp_integral.tcc:
-
 /usr/include/c++/15.2.1/tr1/legendre_function.tcc:
 
 /home/jan/projekty/Spotify-algorithm/BetAlgorithm/TrackList.cpp:
 
 /usr/include/c++/15.2.1/memory:
+
+/usr/lib/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginAdditionalTargetInfo.cmake:
+
+/usr/lib/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets.cmake:
+
+/usr/include/c++/15.2.1/iterator:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -1023,6 +1047,16 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
 /usr/include/c++/15.2.1/iosfwd:
 
 /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/15.2.1/initializer_list:
+
+/usr/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:
+
+/usr/include/c++/15.2.1/variant:
+
+/usr/include/c++/15.2.1/tr1/exp_integral.tcc:
+
+/usr/include/qt6/QtGui/qcursor.h:
 
 /usr/include/c++/15.2.1/functional:
 
@@ -1033,6 +1067,12 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
 /usr/include/c++/15.2.1/ext/type_traits.h:
 
 /usr/include/c++/15.2.1/bits/cxxabi_forced.h:
+
+/usr/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake:
+
+/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake:
+
+/usr/include/qt6/QtGui/qaction.h:
 
 /usr/include/qt6/QtCore/qset.h:
 
@@ -1063,8 +1103,6 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
 /usr/include/qt6/QtGui/qregion.h:
 
 /usr/include/stdint.h:
-
-/usr/include/c++/15.2.1/cerrno:
 
 /usr/include/c++/15.2.1/list:
 
@@ -1103,12 +1141,6 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
 /usr/lib/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginTargets-relwithdebinfo.cmake:
 
 /usr/include/c++/15.2.1/bits/unordered_map.h:
-
-/usr/include/c++/15.2.1/utility:
-
-/usr/include/c++/15.2.1/set:
-
-/usr/include/qt6/QtCore/qiodevicebase.h:
 
 /usr/include/c++/15.2.1/bits/uniform_int_dist.h:
 
@@ -1150,10 +1182,6 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
 
 /usr/include/c++/15.2.1/bits/std_function.h:
 
-/usr/include/c++/15.2.1/typeinfo:
-
-/usr/include/c++/15.2.1/bits/specfun.h:
-
 /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/15.2.1/tr1/bessel_function.tcc:
@@ -1170,21 +1198,7 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
 
 /usr/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake:
 
-/usr/include/c++/15.2.1/limits:
-
-/usr/include/bits/struct_mutex.h:
-
-/usr/include/c++/15.2.1/bits/stl_construct.h:
-
-/usr/include/c++/15.2.1/bits/predefined_ops.h:
-
-/usr/include/bits/types/struct_itimerspec.h:
-
-/usr/include/qt6/QtCore/q20type_traits.h:
-
 /usr/include/qt6/QtCore/qsystemdetection.h:
-
-/usr/include/c++/15.2.1/unordered_map:
 
 /usr/include/c++/15.2.1/bits/streambuf.tcc:
 
@@ -1222,8 +1236,6 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
 
 /usr/include/c++/15.2.1/bits/move.h:
 
-/usr/include/bits/types.h:
-
 /usr/lib/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginConfig.cmake:
 
 /usr/include/qt6/QtCore/qtaggedpointer.h:
@@ -1232,11 +1244,43 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
 
 /usr/include/c++/15.2.1/bits/localefwd.h:
 
-/usr/include/c++/15.2.1/type_traits:
+/usr/include/c++/15.2.1/limits:
+
+/usr/include/bits/struct_mutex.h:
+
+/usr/include/c++/15.2.1/bits/stl_construct.h:
+
+/usr/include/c++/15.2.1/bits/predefined_ops.h:
+
+/usr/include/bits/types/struct_itimerspec.h:
+
+/usr/include/qt6/QtCore/q20type_traits.h:
+
+/usr/include/c++/15.2.1/bits/locale_facets.h:
+
+/usr/include/qt6/QtCore/qarraydataops.h:
+
+/usr/include/qt6/QtCore/qflags.h:
+
+/usr/lib/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake:
+
+/usr/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake:
+
+/usr/include/c++/15.2.1/bits/locale_classes.h:
+
+/usr/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake:
+
+/usr/include/c++/15.2.1/bits/list.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h:
+
+/usr/include/bits/types/sigset_t.h:
 
 /usr/include/c++/15.2.1/bits/align.h:
 
 /usr/include/bits/thread-shared-types.h:
+
+/usr/include/c++/15.2.1/ios:
 
 /usr/include/bits/types/time_t.h:
 
@@ -1249,6 +1293,8 @@ BetAlgorithm_autogen/timestamp: /home/jan/projekty/Spotify-algorithm/BetAlgorith
 /usr/lib/cmake/Qt6Gui/Qt6QTsLibPluginTargets-relwithdebinfo.cmake:
 
 /usr/include/bits/select.h:
+
+/usr/include/c++/15.2.1/bits/codecvt.h:
 
 /usr/include/c++/15.2.1/bits/stl_algobase.h:
 
@@ -1294,12 +1340,6 @@ CMakeFiles/4.2.0/CMakeSystem.cmake:
 
 /usr/include/qt6/QtCore/qhashfunctions.h:
 
-/usr/lib/cmake/Qt6Gui/Qt6QVncIntegrationPluginConfig.cmake:
-
-/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
-
-/usr/include/c++/15.2.1/bits/parse_numbers.h:
-
 /usr/include/c++/15.2.1/tr1/ell_integral.tcc:
 
 /usr/include/bits/endianness.h:
@@ -1309,24 +1349,6 @@ CMakeFiles/4.2.0/CMakeSystem.cmake:
 /usr/include/c++/15.2.1/ext/string_conversions.h:
 
 /home/jan/projekty/Spotify-algorithm/BetAlgorithm/mainwindow.ui:
-
-/usr/lib/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginAdditionalTargetInfo.cmake:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h:
-
-/usr/include/bits/types/sigset_t.h:
-
-/usr/include/c++/15.2.1/bits/list.tcc:
-
-/usr/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake:
-
-/usr/include/c++/15.2.1/bits/locale_classes.h:
-
-CMakeFiles/4.2.0/CMakeCXXCompiler.cmake:
-
-/usr/include/alloca.h:
-
-/usr/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake:
 
 /usr/include/qt6/QtCore/qbytearray.h:
 
@@ -1338,9 +1360,39 @@ CMakeFiles/4.2.0/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/15.2.1/bits/stl_bvector.h:
 
+/usr/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake:
+
+/usr/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake:
+
+/usr/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake:
+
+/usr/include/bits/types.h:
+
+/usr/include/c++/15.2.1/bits/locale_facets.tcc:
+
+/usr/include/asm/posix_types_64.h:
+
 BetAlgorithm_autogen/moc_predefs.h:
 
+/usr/include/alloca.h:
+
+CMakeFiles/4.2.0/CMakeCXXCompiler.cmake:
+
+/usr/include/c++/15.2.1/cerrno:
+
+/usr/include/qt6/QtCore/qscopedpointer.h:
+
+/usr/include/qt6/QtCore/qanystringview.h:
+
+/usr/include/c++/15.2.1/bits/invoke.h:
+
+/usr/include/bits/endian.h:
+
 /usr/include/c++/15.2.1/exception:
+
+/usr/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake:
+
+/usr/include/c++/15.2.1/bits/stl_heap.h:
 
 /usr/include/c++/15.2.1/bits/basic_string.h:
 
@@ -1357,6 +1409,8 @@ BetAlgorithm_autogen/moc_predefs.h:
 /usr/include/c++/15.2.1/pstl/pstl_config.h:
 
 /home/jan/projekty/Spotify-algorithm/BetAlgorithm/CMakeLists.txt:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
 
 /usr/include/qt6/QtCore/qmetatype.h:
 
@@ -1376,6 +1430,8 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/include/bits/waitstatus.h:
 
+/usr/include/c++/15.2.1/ostream:
+
 /home/jan/projekty/Spotify-algorithm/BetAlgorithm/TrackList.h:
 
 /usr/include/c++/15.2.1/bits/requires_hosted.h:
@@ -1394,23 +1450,29 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/include/bits/time.h:
 
+/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:
+
+/usr/lib/cmake/Qt6Gui/Qt6QXcbIntegrationPluginConfig.cmake:
+
+/usr/lib/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginTargets.cmake:
+
+/usr/include/c++/15.2.1/fstream:
+
 /usr/include/c++/15.2.1/compare:
 
-/usr/include/asm/posix_types_64.h:
+/usr/lib/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets.cmake:
 
-/usr/include/c++/15.2.1/bits/stl_heap.h:
-
-/usr/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake:
+/usr/include/c++/15.2.1/cwctype:
 
 /usr/include/bits/posix1_lim.h:
 
 /usr/include/wchar.h:
 
-/usr/include/c++/15.2.1/bits/std_abs.h:
+/usr/include/c++/15.2.1/cstdio:
 
-/usr/include/c++/15.2.1/tr1/special_function_util.h:
+/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake:
 
-/usr/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake:
+/usr/include/qt6/QtCore/qrefcount.h:
 
 /usr/include/c++/15.2.1/bits/stl_map.h:
 
@@ -1444,11 +1506,15 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake:
 
+/usr/include/c++/15.2.1/bits/ostream.h:
+
 /usr/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:
 
 /usr/include/asm/types.h:
 
 /usr/include/bits/types/struct_FILE.h:
+
+/usr/include/c++/15.2.1/bit:
 
 /usr/include/bits/pthreadtypes.h:
 
@@ -1461,6 +1527,14 @@ BetAlgorithm_autogen/moc_predefs.h:
 /usr/include/asm/posix_types.h:
 
 /usr/include/qt6/QtCore/qtdeprecationdefinitions.h:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/lib/cmake/Qt6Gui/Qt6QLibInputPluginTargets.cmake:
+
+/usr/include/c++/15.2.1/bits/ostream.tcc:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
 /usr/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake:
 
@@ -1494,41 +1568,19 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/include/c++/15.2.1/pstl/execution_defs.h:
 
-/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake:
-
 /usr/include/c++/15.2.1/bits/enable_special_members.h:
 
 /usr/include/bits/atomic_wide_counter.h:
-
-/usr/include/c++/15.2.1/tuple:
-
-/usr/include/errno.h:
-
-/usr/lib/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginConfig.cmake:
-
-/usr/include/qt6/QtGui/qpolygon.h:
-
-/usr/include/qt6/QtCore/qfunctionaltools_impl.h:
-
-/usr/include/qt6/QtCore/qsharedpointer_impl.h:
-
-/usr/lib/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginTargets.cmake:
-
-/usr/lib/cmake/Qt6DBus/Qt6DBusTargets-relwithdebinfo.cmake:
-
-/usr/include/c++/15.2.1/bit:
-
-/usr/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake:
-
-/usr/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake:
 
 /usr/include/bits/uintn-identity.h:
 
 /usr/include/qt6/QtCore/qlist.h:
 
 /usr/include/c++/15.2.1/bits/hashtable_policy.h:
+
+/usr/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
+
+/usr/include/bits/types/__fpos64_t.h:
 
 /usr/include/bits/types/__locale_t.h:
 
@@ -1538,6 +1590,12 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
 
+/usr/include/c++/15.2.1/bits/parse_numbers.h:
+
+/usr/lib/cmake/Qt6Gui/Qt6QVncIntegrationPluginConfig.cmake:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
 /usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake:
 
 /usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake:
@@ -1545,8 +1603,6 @@ BetAlgorithm_autogen/moc_predefs.h:
 /usr/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake:
 
 /usr/include/bits/types/mbstate_t.h:
-
-/usr/include/c++/15.2.1/version:
 
 /usr/include/qt6/QtCore/qshareddata_impl.h:
 
@@ -1557,6 +1613,12 @@ BetAlgorithm_autogen/moc_predefs.h:
 /usr/include/bits/sched.h:
 
 /usr/include/bits/struct_rwlock.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/c++/15.2.1/bits/stl_function.h:
+
+/usr/include/c++/15.2.1/bits/chrono.h:
 
 /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h:
 
@@ -1602,10 +1664,6 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/include/c++/15.2.1/bits/char_traits.h:
 
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
-
 /usr/include/bits/types/wint_t.h:
 
 /usr/include/c++/15.2.1/backward/binders.h:
@@ -1626,6 +1684,10 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/include/c++/15.2.1/array:
 
+/usr/include/c++/15.2.1/bits/hash_bytes.h:
+
+/usr/include/qt6/QtCore/qtcore-config.h:
+
 /usr/include/c++/15.2.1/bits/postypes.h:
 
 /usr/include/bits/stdlib-float.h:
@@ -1636,9 +1698,13 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/include/c++/15.2.1/bits/erase_if.h:
 
+/usr/include/c++/15.2.1/istream:
+
 /usr/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake:
 
 /usr/include/c++/15.2.1/backward/auto_ptr.h:
+
+/usr/include/c++/15.2.1/bits/basic_ios.h:
 
 /usr/include/asm/bitsperlong.h:
 
@@ -1654,6 +1720,8 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/include/qt6/QtCore/qstringalgorithms.h:
 
+/usr/include/c++/15.2.1/bits/basic_ios.tcc:
+
 /usr/include/qt6/QtCore/qstringconverter.h:
 
 /usr/include/c++/15.2.1/bits/charconv.h:
@@ -1668,29 +1736,67 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/include/stdio.h:
 
-/usr/include/c++/15.2.1/bits/hash_bytes.h:
+/usr/lib/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginConfig.cmake:
 
-/usr/include/qt6/QtCore/qtcore-config.h:
+/usr/include/qt6/QtGui/qpolygon.h:
 
-/usr/include/sys/select.h:
+/usr/include/qt6/QtCore/qfunctionaltools_impl.h:
 
-/usr/include/c++/15.2.1/bits/chrono.h:
+/usr/include/qt6/QtCore/qsharedpointer_impl.h:
 
-/usr/include/c++/15.2.1/bits/stl_function.h:
+/usr/lib/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginTargets.cmake:
 
-/usr/include/qt6/QtCore/qscopedpointer.h:
+/usr/lib/cmake/Qt6DBus/Qt6DBusTargets-relwithdebinfo.cmake:
 
-/usr/include/c++/15.2.1/cstdio:
+/usr/share/cmake/Modules/Linker/GNU-CXX.cmake:
 
-/usr/include/qt6/QtCore/qrefcount.h:
+/usr/include/c++/15.2.1/bits/fstream.tcc:
 
-/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake:
+/usr/include/time.h:
 
-/usr/include/bits/endian.h:
+/usr/include/c++/15.2.1/bits/std_abs.h:
 
-/usr/include/qt6/QtCore/qanystringview.h:
+/usr/include/c++/15.2.1/tr1/special_function_util.h:
 
-/usr/include/c++/15.2.1/bits/invoke.h:
+/usr/include/c++/15.2.1/tuple:
+
+/usr/include/errno.h:
+
+/usr/include/c++/15.2.1/type_traits:
+
+/usr/include/c++/15.2.1/bits/specfun.h:
+
+/usr/include/c++/15.2.1/typeinfo:
+
+/usr/include/qt6/QtCore/qcompare_impl.h:
+
+/usr/include/c++/15.2.1/unordered_map:
+
+/usr/include/c++/15.2.1/unordered_set:
+
+/usr/include/c++/15.2.1/utility:
+
+/usr/include/c++/15.2.1/set:
+
+/usr/include/qt6/QtCore/qiodevicebase.h:
+
+/usr/include/c++/15.2.1/version:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h:
+
+/usr/lib/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginTargets-relwithdebinfo.cmake:
+
+/usr/include/qt6/QtWidgets/qmainwindow.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/qt6/QtCore/qtresource.h:
+
+/usr/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
 
@@ -1750,9 +1856,9 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/include/qt6/QtCore/q20functional.h:
 
-/usr/include/features.h:
-
 /usr/include/c++/15.2.1/chrono:
+
+/usr/include/features.h:
 
 /usr/include/qt6/QtCore/q20iterator.h:
 
@@ -1768,8 +1874,6 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/include/qt6/QtCore/q23type_traits.h:
 
-/usr/lib/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginConfig.cmake:
-
 /usr/lib/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginConfig.cmake:
 
 /usr/include/c++/15.2.1/bits/cpp_type_traits.h:
@@ -1780,13 +1884,9 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake:
 
+/usr/include/c++/15.2.1/bits/istream.tcc:
+
 /usr/include/qt6/QtCore/qarraydata.h:
-
-/usr/include/qt6/QtCore/qarraydataops.h:
-
-/usr/include/qt6/QtCore/qflags.h:
-
-/usr/lib/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake:
 
 /usr/include/qt6/QtCore/qarraydatapointer.h:
 
@@ -1819,10 +1919,6 @@ BetAlgorithm_autogen/moc_predefs.h:
 /usr/include/qt6/QtCore/qbytearrayview.h:
 
 /usr/lib/cmake/Qt6/Qt6Targets.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets-relwithdebinfo.cmake:
 
 /usr/include/c++/15.2.1/bits/uses_allocator_args.h:
 
@@ -1892,6 +1988,14 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/include/qt6/QtCore/qglobal.h:
 
+/usr/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/bits/wctype-wchar.h:
+
+/usr/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake:
+
 /usr/include/c++/15.2.1/cstdlib:
 
 /usr/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake:
@@ -1949,8 +2053,6 @@ BetAlgorithm_autogen/moc_predefs.h:
 /usr/include/qt6/QtCore/qobjectdefs_impl.h:
 
 /usr/include/qt6/QtCore/qpoint.h:
-
-/usr/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake:
 
 /usr/lib/cmake/Qt6Gui/Qt6QGtk3ThemePluginConfig.cmake:
 
@@ -2012,16 +2114,6 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/include/qt6/QtGui/qpalette.h:
 
-/usr/lib/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginAdditionalTargetInfo.cmake:
-
-/usr/include/c++/15.2.1/iterator:
-
-/usr/lib/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets.cmake:
-
-/usr/include/bits/libc-header-start.h:
-
-/usr/include/qt6/QtCore/qtresource.h:
-
 /usr/lib/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginTargets-relwithdebinfo.cmake:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
@@ -2048,8 +2140,6 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/include/qt6/QtCore/qyieldcpu.h:
 
-/usr/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake:
-
 /usr/include/qt6/QtGui/qbrush.h:
 
 /usr/lib/cmake/Qt6/QtPublicToolHelpers.cmake:
@@ -2064,23 +2154,15 @@ BetAlgorithm_autogen/moc_predefs.h:
 
 /usr/include/qt6/QtGui/qpixmap.h:
 
-/usr/include/bits/stdint-intn.h:
-
-/usr/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
-
 /usr/include/c++/15.2.1/bits/allocated_ptr.h:
 
 /usr/include/c++/15.2.1/bits/stream_iterator.h:
 
 /usr/include/qt6/QtGui/qtgui-config.h:
 
-/usr/lib/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginTargets-relwithdebinfo.cmake:
-
-/usr/include/qt6/QtWidgets/qmainwindow.h:
-
 /usr/include/bits/floatn-common.h:
+
+/usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
 
 /usr/include/qt6/QtWidgets/qtabwidget.h:
 
@@ -2089,6 +2171,8 @@ BetAlgorithm_autogen/moc_predefs.h:
 /usr/include/qt6/QtWidgets/qtwidgetsglobal.h:
 
 /usr/include/sched.h:
+
+/usr/include/wctype.h:
 
 /usr/include/qt6/QtCore/qrect.h:
 
@@ -2099,8 +2183,6 @@ BetAlgorithm_autogen/moc_predefs.h:
 /usr/include/sys/cdefs.h:
 
 /usr/include/sys/types.h:
-
-/usr/include/time.h:
 
 /usr/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake:
 
@@ -2113,8 +2195,6 @@ BetAlgorithm_autogen/moc_predefs.h:
 /usr/lib/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginAdditionalTargetInfo.cmake:
 
 /usr/lib/cmake/Qt6/Qt6ConfigExtras.cmake:
-
-/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake:
 
 /usr/lib/cmake/Qt6/Qt6Dependencies.cmake:
 
@@ -2133,8 +2213,6 @@ BetAlgorithm_autogen/moc_predefs.h:
 /usr/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake:
 
 /usr/lib/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake:
 
 /usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:
 
@@ -2177,21 +2255,3 @@ BetAlgorithm_autogen/moc_predefs.h:
 /usr/lib/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake:
 
 /usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake:
-
-/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake:
-
-/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginTargets-relwithdebinfo.cmake:
-
-/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets-relwithdebinfo.cmake:
-
-/usr/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake:
-
-/usr/include/qt6/QtGui/qaction.h:
-
-/usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginAdditionalTargetInfo.cmake:

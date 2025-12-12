@@ -127,6 +127,8 @@ void MainWindow::on_butConfirmChange_clicked()
     if(selectedElement < 1){
         selectedElement = 1;
     }
+    if(newPriority > 9)
+        newPriority = 9;
     TLptr->tracklist[selectedElement-1].first = newPriority;
     UpdateTrackQList();
 

@@ -1,0 +1,6 @@
+3,Flashing lights
+3,Power
+2,Runaway
+1,Heartless
+1,Ghosttown
+2,On Sight

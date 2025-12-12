@@ -5,7 +5,7 @@
 #include <ctime>
 #include <cstdlib>
 #include <string>
-
+#include <fstream>
 class TrackList
 {
 public:
@@ -20,6 +20,7 @@ public:
      std::string GetTrack(int curr);
      void Start(bool shuffle, int &curr);
      void ChangePriority(int songid, int newPriority);
+     void TrackList::SaveToFile();
 
 };
 
