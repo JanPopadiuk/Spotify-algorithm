@@ -20,7 +20,7 @@ public:
      std::string GetTrack(int curr);
      void Start(bool shuffle, int &curr);
      void ChangePriority(int songid, int newPriority);
-     void TrackList::SaveToFile();
+     void SaveToFile();
 
 };
 

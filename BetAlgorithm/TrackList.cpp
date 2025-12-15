@@ -10,11 +10,8 @@ TrackList::TrackList()
         int intPriority = stoi(Priority);
         std::string SongName = LineFromFile.substr(2);
         tracklist.push_back({intPriority,SongName});
-
     }
     file.close();
-
-
     // tracklist.push_back({3,"Flashing lights"});
     // tracklist.push_back({3,"Power"});
     // tracklist.push_back({2,"Runaway"});
@@ -71,9 +68,10 @@ void TrackList::Start(bool shuffle, int &curr)
         return;
     }
 
-    for (auto &t : tracklist)
-        Queue.push_back(t.second);
 
+    for (auto &t : tracklist){
+        Queue.push_back(t.second);
+    }
     curr = 0;
 }
 
@@ -83,5 +81,11 @@ void TrackList::ChangePriority(int songid, int newPriority)
 }
 
 void TrackList::SaveToFile(){
-    std::ostream file("songlist.txt");
+    std::ofstream file("songlist.txt");
+    for (auto &t : tracklist){
+        std::string priorityString = std::to_string(t.first);
+        file << priorityString << "," << t.second << "\n";
+    }
+
+    file.close();
 }

@@ -103,6 +103,7 @@ void MainWindow::on_btnPrev_clicked()
 
 MainWindow::~MainWindow()
 {
+    TLptr->SaveToFile();
     delete ui;
     delete TLptr;
 }
